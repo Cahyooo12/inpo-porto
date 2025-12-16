@@ -22,7 +22,7 @@ export const About = () => {
               Defined by <span className="text-white">Purpose.</span>
             </h2>
             <p className="text-base text-secondary leading-relaxed max-w-2xl relative z-10">
-              My work bridges the gap between digital aesthetics and real-world social impact. I don't just create content; I craft narratives that resonate and drive change.
+              I blend technical precision in web development and business strategy with an artistic visual touch. My dedication is to drive digital transformations that are not just functional, but narrative-driven. From efficient code to captivating aesthetics, I craft innovative solutions that help organizations thrive and create real-world impact in the digital era.
             </p>
           </Card>
 
