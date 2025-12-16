@@ -60,7 +60,7 @@ export const CV = () => {
             <FadeIn delay={200}>
               <CVItem 
                 year="2022–2025" 
-                role="High School Diploma (MIPA)" 
+                role="High School Diploma (Social Studies)" 
                 org="SMAN 1 Bambanglipuro" 
                 desc="Graduated with honors. GPA: 86.1" 
               />
