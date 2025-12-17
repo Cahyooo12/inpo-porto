@@ -3,6 +3,13 @@ import { Tag } from './ui/Tag';
 import { FadeIn } from './ui/FadeIn';
 import { ArrowDown, ArrowRight, Sparkles } from 'lucide-react';
 
+// --- CONFIGURATION: EDIT STATS HERE ---
+const HERO_STATS = [
+  { value: "3+", label: "Years Exp." },
+  { value: "20+", label: "Projects Done" },
+  { value: "100%", label: "Satisfaction" },
+];
+
 const MarqueeItem = ({ text }: { text: string }) => (
   <span className="text-4xl md:text-6xl font-display font-bold text-transparent bg-clip-text bg-gradient-to-r from-white/10 to-white/30 mx-8 uppercase tracking-tighter">
     {text}
@@ -18,7 +25,7 @@ const StatItem = ({ value, label }: { value: string, label: string }) => (
 
 export const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-32 md:pt-40">
       
       {/* Background Ambience */}
       <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/[0.03] rounded-full blur-[120px] pointer-events-none animate-pulse-slow" />
@@ -33,7 +40,7 @@ export const Hero = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
             </span>
-            <span className="text-xs font-medium text-gray-300 tracking-wider uppercase">Available for Projects</span>
+            <span className="text-xs font-medium text-gray-300 tracking-wider uppercase">Open for Commissions</span>
           </div>
 
           {/* Main Headline */}
@@ -43,7 +50,7 @@ export const Hero = () => {
           </h1>
 
           <p className="max-w-2xl text-secondary text-lg md:text-2xl leading-relaxed mb-8 font-light tracking-wide">
-            I'm <span className="text-white font-medium">Cahyo</span>. Leveraging technical expertise and creative strategy to build digital experiences with profound impact.
+            I'm <span className="text-white font-medium">Cahyo</span>. Blending creative visuals with social purpose to craft digital experiences that matter.
           </p>
 
           {/* CTA Buttons */}
@@ -63,11 +70,11 @@ export const Hero = () => {
             </a>
           </div>
 
-          {/* Stats */}
+          {/* Stats - Dynamic Rendering */}
           <div className="flex flex-wrap justify-center gap-y-4 mb-10 opacity-80">
-             <StatItem value="1+" label="Years Exp." />
-             <StatItem value="20+" label="Projects Done" />
-             <StatItem value="100%" label="Satisfaction" />
+             {HERO_STATS.map((stat, index) => (
+                <StatItem key={index} value={stat.value} label={stat.label} />
+             ))}
           </div>
 
           {/* Skill Tags */}
