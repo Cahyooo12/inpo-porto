@@ -5,7 +5,7 @@ import { ArrowDown, ArrowRight, Sparkles } from 'lucide-react';
 
 // --- CONFIGURATION: EDIT STATS HERE ---
 const HERO_STATS = [
-  { value: "3+", label: "Years Exp." },
+  { value: "1+", label: "Years Exp." },
   { value: "20+", label: "Projects Done" },
   { value: "100%", label: "Satisfaction" },
 ];
