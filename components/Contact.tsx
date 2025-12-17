@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight, Mail, Instagram, Linkedin, MessageCircle } from 'lucide-react';
+import { ArrowUpRight, Mail, Instagram, Linkedin } from 'lucide-react';
 import { FadeIn } from './ui/FadeIn';
 
 const LinkCard = ({ icon: Icon, name, label, href, gradient }: any) => (
@@ -39,7 +39,7 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <LinkCard 
             icon={Mail}
             name="Email"
