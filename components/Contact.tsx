@@ -61,13 +61,6 @@ export const Contact = () => {
             href="https://www.linkedin.com/in/cahyo-"
             gradient="from-blue-600 to-indigo-600"
           />
-          <LinkCard 
-            icon={MessageCircle}
-            name="WhatsApp"
-            label="+62 859-1663-38595"
-            href="https://wa.me/62859166338595"
-            gradient="from-green-500 to-emerald-500"
-          />
         </div>
       </FadeIn>
     </section>
