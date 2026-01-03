@@ -13,18 +13,18 @@ interface ProjectData {
 
 const PROJECTS: ProjectData[] = [
   {
-    title: "Atmosphere Event",
+    title: "BUF 2026 Official Site",
     category: "Development",
-    description: "Developed an interactive event website featuring dynamic animations, schedule exploration, and ticket booking system for a local music festival.",
-    tags: ["React", "Tailwind CSS", "Framer Motion"],
-    image: "https://uploads.onecompiler.io/43w9rf9r9/43xztdypm/7.png"
+    description: "Designed and built an immersive web experience for university seekers. Combining dynamic animations with intuitive navigation to connect students with campuses, major consultations, and event schedules.",
+    tags: ["React", "Tailwind CSS", "Framer Motion", "TypeScript"],
+    image: "https://github.com/Cahyooo12/Jangan-Di-Lihat/blob/main/Frame%206.png?raw=true"
   },
   {
-    title: "Elegance Portfolio",
+    title: "BUF 2026 Visual Identity",
     category: "Design",
-    description: "A visually engaging portfolio website featuring real-time 3D elements, fluid animations, and a responsive sleek interface for a fashion brand.",
-    tags: ["Figma", "Webflow", "GSAP"],
-    image: "https://uploads.onecompiler.io/43w9rf9r9/43wxxv2sw/DSC00250.jpg"
+    description: "Establishing a strong event identity through mascot design. From conceptual sketches to final vector polish, creating a memorable icon for the university fair.",
+    tags: ["Illustrator", "Figma", "Vector Art", "Branding"],
+    image: "https://github.com/Cahyooo12/Jangan-Di-Lihat/blob/main/Frame%207.png?raw=true"
   },
   {
     title: "Social Impact Doc",
@@ -34,26 +34,26 @@ const PROJECTS: ProjectData[] = [
     image: "https://uploads.onecompiler.io/43w9rf9r9/43wxxv2sw/DSC07408.JPG"
   },
   {
-    title: "Java Street Life",
+    title: "Human Stories",
     category: "Photography",
-    description: "Capturing the raw and authentic moments of daily life in the streets of Yogyakarta, focusing on human interest and traditional markets.",
-    tags: ["Sony Alpha", "Street", "Human Interest"],
-    image: "https://images.unsplash.com/photo-1566996695273-047c23101d2d?q=80&w=2070&auto=format&fit=crop"
+    description: "Capturing the raw and authentic essence of the human experience. Weaving personal narratives and cultural identity through candid moments and natural light.",
+    tags: ["Sony Alpha", "Culture", "Human Interest", "Natural Light"],
+    image: "https://github.com/Cahyooo12/Jangan-Di-Lihat/blob/main/DSC07408.JPG?raw=true"
   },
   {
-    title: "Misty Highlands",
+    title: "Human Stories ",
     category: "Photography",
-    description: "A landscape series exploring the serene and mystical atmosphere of Merapi's slopes during the early morning hours.",
-    tags: ["Landscape", "Nature", "Mood"],
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?q=80&w=2070&auto=format&fit=crop"
+    description: "A visual exploration of identity and connection, documenting the quiet, unguarded moments that define our shared humanity.",
+    tags: ["Sony Alpha", "Culture", "Human Interest", "Natural Light"],
+    image: "https://github.com/Cahyooo12/Jangan-Di-Lihat/blob/main/DSC07356-2.jpg?raw=true"
   },
   {
-    title: "Urban Geometry",
+    title: "Stage fotografi",
     category: "Photography",
-    description: "Exploring the interaction between light, shadow, and modern architecture in the developing sides of the city.",
-    tags: ["Architecture", "Composition", "B&W"],
-    image: "https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=2070&auto=format&fit=crop"
-  }
+    description: "Freezing dynamic moments in challenging low-light conditions.",
+    tags: ["Sony Alpha","Low Light", "Event", "Portrait"],
+    image: "https://github.com/Cahyooo12/Jangan-Di-Lihat/blob/main/DSC00003-3.jpg?raw=true"
+  },
 ];
 
 const ProjectCard = ({ project }: { project: ProjectData }) => (

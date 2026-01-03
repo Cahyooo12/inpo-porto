@@ -126,6 +126,14 @@ export const CV = () => {
                 org="SMAN 1 Bambanglipuro" 
                 desc="Led the 'Bamsayota Berbagi' charity event and coordinated various school-wide initiatives." 
               />
+              </FadeIn>
+            <FadeIn delay={400}>
+              <CVItem 
+                year="2019–Present" 
+                role="Education Division Staff" 
+                org="Gerakan Pemuda Sirat" 
+                desc="Actively involved in planning and executing educational initiatives, focusing on character building and academic support for local students." 
+              />
             </FadeIn>
           </div>
         </div>

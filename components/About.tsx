@@ -90,7 +90,9 @@ export const About = () => {
                     <Tag>Capcut</Tag>
                     <Tag>Lightroom</Tag>
                     <Tag>Notion</Tag>
-                    <Tag>Full Stack</Tag>
+                    <Tag>React</Tag>
+                    <Tag>TypeScript</Tag>
+                    <Tag>Tailwind CSS</Tag>
                     <Tag>Git / GitHub</Tag>
                  </div>
              </div>

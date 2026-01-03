@@ -1,8 +1,9 @@
 import React from 'react';
 import { Tag } from './ui/Tag';
 import { FadeIn } from './ui/FadeIn';
-import { ArrowRight } from 'lucide-react';
+import { ArrowDown, ArrowRight, Sparkles } from 'lucide-react';
 
+// --- CONFIGURATION: EDIT STATS HERE ---
 const HERO_STATS = [
   { value: "1+", label: "Years Exp." },
   { value: "20+", label: "Projects Done" },
@@ -84,6 +85,12 @@ export const Hero = () => {
               <Tag>Community Lead</Tag>
           </div>
         </FadeIn>
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce pointer-events-none">
+        <span className="text-[10px] uppercase tracking-[0.2em] text-white">Scroll</span>
+        <ArrowDown size={16} className="text-white" />
       </div>
 
       {/* Infinite Marquee */}
