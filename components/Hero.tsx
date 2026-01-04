@@ -80,6 +80,7 @@ export const Hero = () => {
           {/* Skill Tags */}
           <div className="flex flex-wrap justify-center gap-3">
               <Tag>Visual Design</Tag>
+              <Tag>Fotografi</Tag>
               <Tag>Videography</Tag>
               <Tag>Developer</Tag>
               <Tag>Community Lead</Tag>
