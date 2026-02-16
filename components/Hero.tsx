@@ -16,7 +16,7 @@ const MarqueeItem = ({ text }: { text: string }) => (
   </span>
 );
 
-const StatItem = ({ value, label }: { value: string, label: string }) => (
+const StatItem = ({ value, label }: { value: string, label: string, key?: number | string }) => (
   <div className="flex flex-col items-center px-6 border-r border-white/10 last:border-0">
     <span className="text-2xl md:text-3xl font-bold text-white font-display">{value}</span>
     <span className="text-xs text-secondary uppercase tracking-wider mt-1">{label}</span>
@@ -26,14 +26,14 @@ const StatItem = ({ value, label }: { value: string, label: string }) => (
 export const Hero = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-32 md:pt-40">
-      
+
       {/* Background Ambience */}
       <div className="absolute top-[-20%] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-white/[0.03] rounded-full blur-[120px] pointer-events-none animate-pulse-slow" />
       <div className="absolute bottom-[-20%] left-1/4 w-[500px] h-[500px] bg-emerald-500/[0.02] rounded-full blur-[100px] pointer-events-none" />
 
       <div className="flex-grow flex flex-col justify-center items-center text-center px-6 relative z-10">
         <FadeIn delay={100} className="flex flex-col items-center max-w-5xl">
-          
+
           {/* Status Badge */}
           <div className="mb-8 inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md shadow-[0_0_15px_rgba(0,0,0,0.5)] hover:bg-white/10 transition-colors cursor-default">
             <span className="relative flex h-2 w-2">
@@ -55,15 +55,15 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col md:flex-row gap-4 mb-12 w-full md:w-auto">
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="group relative px-8 py-3 rounded-full bg-white text-black font-semibold flex items-center justify-center gap-2 hover:bg-gray-200 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.5)]"
             >
               Let's Talk
               <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
             </a>
-            <a 
-              href="#projects" 
+            <a
+              href="#projects"
               className="px-8 py-3 rounded-full bg-white/5 text-white border border-white/10 font-medium hover:bg-white/10 transition-colors backdrop-blur-md"
             >
               My Projects
@@ -72,46 +72,43 @@ export const Hero = () => {
 
           {/* Stats - Dynamic Rendering */}
           <div className="flex flex-wrap justify-center gap-y-4 mb-10 opacity-80">
-             {HERO_STATS.map((stat, index) => (
-                <StatItem key={index} value={stat.value} label={stat.label} />
-             ))}
+            {HERO_STATS.map((stat, index) => (
+              <StatItem key={index} value={stat.value} label={stat.label} />
+            ))}
           </div>
 
           {/* Skill Tags */}
           <div className="flex flex-wrap justify-center gap-3">
-              <Tag>Visual Design</Tag>
-              <Tag>Fotografi</Tag>
-              <Tag>Videography</Tag>
-              <Tag>Developer</Tag>
-              <Tag>Community Lead</Tag>
+            <Tag>Visual Design</Tag>
+            <Tag>Photography</Tag>
+            <Tag>Videography</Tag>
+            <Tag>Developer</Tag>
+            <Tag>Community Lead</Tag>
           </div>
         </FadeIn>
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-32 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-50 animate-bounce pointer-events-none">
-        <span className="text-[10px] uppercase tracking-[0.2em] text-white">Scroll</span>
-        <ArrowDown size={16} className="text-white" />
-      </div>
+
 
       {/* Infinite Marquee */}
       <div className="relative w-full py-12 overflow-hidden mask-edges mt-auto mb-10 opacity-40 hover:opacity-80 transition-opacity duration-700">
         <div className="flex whitespace-nowrap animate-scroll w-max">
-           <MarqueeItem text="Creative Direction" />
-           <MarqueeItem text="•" />
-           <MarqueeItem text="Social Impact" />
-           <MarqueeItem text="•" />
-           <MarqueeItem text="Visual Storytelling" />
-           <MarqueeItem text="•" />
-           <MarqueeItem text="Brand Identity" />
-           <MarqueeItem text="•" />
-           <MarqueeItem text="Creative Direction" />
-           <MarqueeItem text="•" />
-           <MarqueeItem text="Social Impact" />
-           <MarqueeItem text="•" />
-           <MarqueeItem text="Visual Storytelling" />
-           <MarqueeItem text="•" />
-           <MarqueeItem text="Brand Identity" />
+          <MarqueeItem text="Creative Direction" />
+          <MarqueeItem text="•" />
+          <MarqueeItem text="Social Impact" />
+          <MarqueeItem text="•" />
+          <MarqueeItem text="Visual Storytelling" />
+          <MarqueeItem text="•" />
+          <MarqueeItem text="Brand Identity" />
+          <MarqueeItem text="•" />
+          <MarqueeItem text="Creative Direction" />
+          <MarqueeItem text="•" />
+          <MarqueeItem text="Social Impact" />
+          <MarqueeItem text="•" />
+          <MarqueeItem text="Visual Storytelling" />
+          <MarqueeItem text="•" />
+          <MarqueeItem text="Brand Identity" />
         </div>
       </div>
     </section>

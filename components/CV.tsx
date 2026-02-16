@@ -36,10 +36,10 @@ const AchievementCard = ({ icon, title, org, year }: { icon: string, title: stri
 export const CV = () => {
   return (
     <section id="cv" className="scroll-mt-32">
-      
+
       {/* Education & Experience Grid */}
       <div className="grid md:grid-cols-2 gap-12 lg:gap-24 mb-24">
-        
+
         {/* Education */}
         <div>
           <FadeIn>
@@ -50,47 +50,47 @@ export const CV = () => {
           </FadeIn>
           <div className="space-y-2">
             <FadeIn delay={100}>
-              <CVItem 
-                year="2025–2029" 
-                role="Bachelor of Information Systems" 
-                org="Amikom University" 
-                desc="Specializing in digital systems, creative technology, and UI/UX design." 
+              <CVItem
+                year="2025–2029"
+                role="Bachelor of Information Systems"
+                org="Amikom University"
+                desc="Specializing in digital systems, creative technology, and UI/UX design."
               />
             </FadeIn>
             <FadeIn delay={200}>
-              <CVItem 
-                year="2022–2025" 
-                role="High School Diploma (Social Studies)" 
-                org="SMAN 1 Bambanglipuro" 
-                desc="Graduated with honors. GPA: 86.1" 
+              <CVItem
+                year="2022–2025"
+                role="High School Diploma (Social Studies)"
+                org="SMAN 1 Bambanglipuro"
+                desc="Graduated with honors. GPA: 86.1"
               />
             </FadeIn>
           </div>
 
           {/* Achievements Section */}
           <div className="mt-12">
-             <FadeIn>
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="p-2 bg-white/5 rounded-lg text-white"><Award size={20} /></div>
-                  <h3 className="text-lg font-display font-medium text-white">Achievements</h3>
-                </div>
-             </FadeIn>
-             <FadeIn delay={300}>
-                <div className="flex flex-col gap-3">
-                  <AchievementCard 
-                     icon="🥉" 
-                     title="3rd Place Video Competition" 
-                     org="Balai Tekkomdik DIY" 
-                     year="2024"
-                  />
-                  <AchievementCard 
-                     icon="🥉" 
-                     title="3rd Place in the Student Creativity Program - Community Service" 
-                     org="PIMAPOSMA AMIKOM" 
-                     year="2025"
-                  />
-                </div>
-             </FadeIn>
+            <FadeIn>
+              <div className="flex items-center gap-3 mb-6">
+                <div className="p-2 bg-white/5 rounded-lg text-white"><Award size={20} /></div>
+                <h3 className="text-lg font-display font-medium text-white">Achievements</h3>
+              </div>
+            </FadeIn>
+            <FadeIn delay={300}>
+              <div className="flex flex-col gap-3">
+                <AchievementCard
+                  icon="🥉"
+                  title="3rd Place Video Competition"
+                  org="Balai Tekkomdik DIY"
+                  year="2024"
+                />
+                <AchievementCard
+                  icon="🥉"
+                  title="3rd Place in the Student Creativity Program - Community Service"
+                  org="PIMAPOSMA AMIKOM"
+                  year="2025"
+                />
+              </div>
+            </FadeIn>
           </div>
         </div>
 
@@ -103,36 +103,50 @@ export const CV = () => {
             </div>
           </FadeIn>
           <div className="space-y-2">
+            <FadeIn delay={50}>
+              <CVItem
+                year="Feb 2026 – Present"
+                role="Social Media Officer"
+                org="Sayur Sleman · Internship"
+              />
+            </FadeIn>
+            <FadeIn delay={75}>
+              <CVItem
+                year="Dec 2025 – Present"
+                role="Web Developer Search Engine Optimization"
+                org="Tandang Studio · Part-Time"
+              />
+            </FadeIn>
             <FadeIn delay={100}>
-              <CVItem 
-                year="2024–Present" 
-                role="Social Media Manager" 
-                org="Desamind Yogyakarta" 
-                desc="Spearheading social media strategies, designing visual content, and managing community engagement for village empowerment programs." 
+              <CVItem
+                year="2024–Present"
+                role="Social Media Manager"
+                org="Desamind Yogyakarta"
+                desc="Spearheading social media strategies, designing visual content, and managing community engagement for village empowerment programs."
               />
             </FadeIn>
             <FadeIn delay={200}>
-              <CVItem 
-                year="2024–Present" 
-                role="Content Creator" 
-                org="RCE Youth UGM" 
-                desc="Developing educational content focused on Sustainable Development Goals (SDGs) and youth participation." 
+              <CVItem
+                year="2024–Present"
+                role="Content Creator"
+                org="RCE Youth UGM"
+                desc="Developing educational content focused on Sustainable Development Goals (SDGs) and youth participation."
               />
             </FadeIn>
             <FadeIn delay={300}>
-              <CVItem 
-                year="2022–2024" 
-                role="Student Council (OSIS)" 
-                org="SMAN 1 Bambanglipuro" 
-                desc="Led the 'Bamsayota Berbagi' charity event and coordinated various school-wide initiatives." 
+              <CVItem
+                year="2022–2024"
+                role="Student Council (OSIS)"
+                org="SMAN 1 Bambanglipuro"
+                desc="Led the 'Bamsayota Berbagi' charity event and coordinated various school-wide initiatives."
               />
-              </FadeIn>
+            </FadeIn>
             <FadeIn delay={400}>
-              <CVItem 
-                year="2019–Present" 
-                role="Education Division Staff" 
-                org="Gerakan Pemuda Sirat" 
-                desc="Actively involved in planning and executing educational initiatives, focusing on character building and academic support for local students." 
+              <CVItem
+                year="2019–Present"
+                role="Education Division Staff"
+                org="Gerakan Pemuda Sirat"
+                desc="Actively involved in planning and executing educational initiatives, focusing on character building and academic support for local students."
               />
             </FadeIn>
           </div>
@@ -151,10 +165,10 @@ export const CV = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-             <VolunteerCard role="Field Volunteer" org="Pandara Foundation" event="Parangtritis Beach Cleanup" />
-             <VolunteerCard role="Leadership Camp" org="Desamind ID" event="Volunteer Participant" />
-             <VolunteerCard role="Environmental Action" org="4K Yogyakarta" event="Sea Pandan Planting" />
-             <VolunteerCard role="Event Staff" org="Vegan Festival Yogyakarta" event="Coordinator Assistant" />
+            <VolunteerCard role="Field Volunteer" org="Pandara Foundation" event="Parangtritis Beach Cleanup" />
+            <VolunteerCard role="Leadership Camp" org="Desamind ID" event="Volunteer Participant" />
+            <VolunteerCard role="Environmental Action" org="4K Yogyakarta" event="Sea Pandan Planting" />
+            <VolunteerCard role="Event Staff" org="Vegan Festival Yogyakarta" event="Coordinator Assistant" />
           </div>
         </div>
       </FadeIn>

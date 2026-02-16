@@ -26,7 +26,7 @@ export default function App() {
   return (
     <div className="min-h-screen selection:bg-accent selection:text-white font-sans overflow-x-hidden">
       <Navbar />
-      
+
       <main className="flex flex-col gap-32 pb-20">
         <Hero />
         <div className="container mx-auto px-6 md:px-12 max-w-6xl space-y-32">
@@ -41,9 +41,8 @@ export default function App() {
 
       <button
         onClick={scrollToTop}
-        className={`fixed bottom-8 right-8 p-3 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-full transition-all duration-500 hover:bg-white hover:text-black z-50 ${
-          showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
-        }`}
+        className={`fixed bottom-8 right-8 p-3 bg-white/10 backdrop-blur-md border border-white/10 text-white rounded-full transition-all duration-500 hover:bg-white hover:text-black z-50 ${showScrollTop ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'
+          }`}
       >
         <ArrowUp size={20} />
       </button>

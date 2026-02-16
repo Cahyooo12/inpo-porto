@@ -3,7 +3,7 @@ import { ArrowUpRight, Mail, Instagram, Linkedin } from 'lucide-react';
 import { FadeIn } from './ui/FadeIn';
 
 const LinkCard = ({ icon: Icon, name, label, href, gradient }: any) => (
-  <a 
+  <a
     href={href}
     target="_blank"
     rel="noreferrer"
@@ -31,7 +31,7 @@ export const Contact = () => {
       <FadeIn>
         <div className="mb-12">
           <h2 className="font-display text-5xl md:text-7xl text-white font-medium tracking-tighter mb-6">
-            Let's start a <br/>
+            Let's start a <br />
             <span className="text-gray-600">conversation.</span>
           </h2>
           <p className="text-secondary text-lg max-w-xl">
@@ -40,21 +40,21 @@ export const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-          <LinkCard 
+          <LinkCard
             icon={Mail}
             name="Email"
             label="Cahsirat05@gmail.com"
             href="mailto:Cahsirat05@gmail.com"
             gradient="from-blue-500 to-cyan-500"
           />
-          <LinkCard 
+          <LinkCard
             icon={Instagram}
             name="Instagram"
             label="@cahyo_sirat05"
             href="https://www.instagram.com/cahyo_sirat05/"
             gradient="from-pink-500 to-orange-500"
           />
-          <LinkCard 
+          <LinkCard
             icon={Linkedin}
             name="LinkedIn"
             label="/in/cahyo-"
