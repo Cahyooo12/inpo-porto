@@ -4,17 +4,73 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CAHYO — Portfolio</title>
-  <meta name="description" content="Portfolio of Cahyo - Designer & Creator" />
-  <link rel="icon" type="image/png"
-    href="https://github.com/Cahyooo12/Jangan-Di-Lihat/blob/main/image-removebg-preview.png?raw=true" />
+  <title>Cahyo Dev — Portfolio | Web & Mobile Developer Yogyakarta</title>
+  <meta name="description"
+    content="Portfolio profesional Cahyo (Cahyo Dev), mahasiswa Sistem Informasi Amikom. Ahli dalam Flutter, React JS, MERN Stack, dan penggerak sosial di Desamind serta Sirat-Telang Center." />
+  <meta name="keywords"
+    content="Cahyo Dev, Cahyo Amikom Yogyakarta, Cahyo Information Systems Student, Portfolio Cahyo Dev, Web Developer Amikom, Flutter Developer Indonesia, Junior Web Developer MERN Stack, Jasa Pembuatan Website React JS, Mobile App Developer Yogyakarta, Frontend Developer Portfolio, Fullstack Developer Node.js, Jasa Website Karang Taruna, Pengembangan Website Desa Wisata, Portfolio UI/UX Design Photography, Web Development Services Yogyakarta, Aktivis RCE Youth UGM, Penggerak Desamind Yogyakarta, Inisiator Sirat-Telang Center, Community Development Specialist Indonesia" />
+  <meta name="author" content="Cahyo Dev" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://cahyo.dev/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cahyo.dev/" />
+  <meta property="og:title" content="Cahyo Dev — Portfolio | Web & Mobile Developer Yogyakarta" />
+  <meta property="og:description"
+    content="Portfolio profesional Cahyo (Cahyo Dev), mahasiswa Amikom. Pengembang Web & Mobile serta penggerak komunitas." />
+  <meta property="og:image"
+    content="https://uploads.onecompiler.io/43w9rf9r9/43wxqhn2f/Desain%20tanpa%20judul%20(3).png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://cahyo.dev/" />
+  <meta property="twitter:title" content="Cahyo Dev — Portfolio | Web & Mobile Developer Yogyakarta" />
+  <meta property="twitter:description"
+    content="Portfolio profesional Cahyo (Cahyo Dev), mahasiswa Amikom. Pengembang Web & Mobile serta penggerak komunitas." />
+  <meta property="twitter:image"
+    content="https://uploads.onecompiler.io/43w9rf9r9/43wxqhn2f/Desain%20tanpa%20judul%20(3).png" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Cahyo Dev",
+      "url": "https://cahyo.dev/",
+      "image": "https://uploads.onecompiler.io/43w9rf9r9/43wxqhn2f/Desain%20tanpa%20judul%20(3).png",
+      "jobTitle": "Web & Mobile Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Tandang Studio"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Amikom University"
+      },
+      "sameAs": [
+        "https://www.instagram.com/cahyo_sirat05/",
+        "https://www.linkedin.com/in/cahyo-",
+        "https://wa.me/62859166338595"
+      ],
+      "description": "Portfolio profesional Cahyo (Cahyo Dev), mahasiswa Amikom. Pengembang Web & Mobile serta penggerak komunitas di Desamind dan Sirat-Telang Center."
+    }
+    </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://cahyo.dev/",
+      "name": "Cahyo Dev Portfolio",
+      "description": "Designing Impact - Portfolio of Cahyo Dev, Web & Mobile Developer in Yogyakarta."
+    }
+    </script>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
-      darkMode: 'class',
       theme: {
         extend: {
           fontFamily: {
@@ -22,17 +78,16 @@
             display: ['Space Grotesk', 'sans-serif'],
           },
           colors: {
-            bg: 'var(--bg)',
-            surface: 'var(--surface)',
-            surfaceHighlight: 'var(--surface-highlight)',
-            border: 'var(--border)',
-            accent: 'var(--accent)',
-            secondary: 'var(--text-secondary)',
-            primary: 'var(--text-primary)',
+            bg: '#050505',
+            surface: '#0F0F0F',
+            surfaceHighlight: '#1A1A1A',
+            border: '#2A2A2A',
+            accent: '#ffffff',
+            secondary: '#A1A1AA',
           },
           backgroundImage: {
             'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-            'grid-pattern': "linear-gradient(to right, var(--border) 1px, transparent 1px), linear-gradient(to bottom, var(--border) 1px, transparent 1px)",
+            'grid-pattern': "linear-gradient(to right, #2A2A2A 1px, transparent 1px), linear-gradient(to bottom, #2A2A2A 1px, transparent 1px)",
           },
           animation: {
             'float': 'float 6s ease-in-out infinite',
@@ -54,19 +109,9 @@
     }
   </script>
   <style>
-    :root {
-      --bg: #050505;
-      --surface: #0F0F0F;
-      --surface-highlight: #1A1A1A;
-      --border: #2A2A2A;
-      --text-primary: #e5e5e5;
-      --text-secondary: #A1A1AA;
-      --accent: #ffffff;
-    }
-
     body {
-      background-color: var(--bg);
-      color: var(--text-primary);
+      background-color: #050505;
+      color: #e5e5e5;
       overflow-x: hidden;
     }
 
